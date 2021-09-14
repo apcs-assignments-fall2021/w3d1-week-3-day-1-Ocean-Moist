@@ -4,8 +4,9 @@ public class MyMain {
     // Ex. divisibleByFour(16) -> true
     //     divisibleByFour(5) -> false
     public static boolean divisibleByFour(int num) {
-        // REPLACE WITH YOUR CODE HERE
-        return false;
+        if (num % 4 == 0) {
+            return true
+        }
     }
 
     // This method prints every number from 1 up to and including the input biggest
@@ -14,7 +15,12 @@ public class MyMain {
     // 6 7 8 9 10
     // ...
     public static void printNumsUpTo(int biggest) {
-        // REPLACE THIS WITH YOUR CODE
+        for (int i = 0; i <= biggest; i++) {
+            System.out.println(i);
+            if (i % 5 == 0) {
+                System.out.print(\n);
+            } 
+        }
     }
 
     // This method is given an input x, and it adds up the sum of its digits
